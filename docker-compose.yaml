@@ -1,0 +1,12 @@
+# services:
+#   classification:
+#     build: classification
+#     ports:
+#     - "8000:5000"
+services:
+  classification:
+    build: classification
+    ports:
+      - "8000:5000"
+    volumes:
+      - ./host_output:/app/output
