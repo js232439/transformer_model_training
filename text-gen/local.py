@@ -1,8 +1,9 @@
 from transformers import pipeline, AutoTokenizer, AutoModelForCausalLM
 import torch
 from huggingface_hub import login
+import os
 
-login(token="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")
+login(token=os.getenv("ACCESS_TOKEN"))
 
 model_path = "/Users/js232439/.cache/huggingface/models--meta-llama--Llama-3.1-8B-Instruct"
 

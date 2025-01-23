@@ -1,9 +1,11 @@
 from airllm import AirLLM
 from transformers import AutoTokenizer
+import os
 
 # Load the LLaMA 3.3 model and tokenizer
 model_name = "/Users/js232439/javi-sandbox/text-gen/Llama-3.3-70B-Instruct"  # Replace with the actual model name or path
 tokenizer = AutoTokenizer.from_pretrained(model_name)
+login(token=os.getenv("ACCESS_TOKEN"))
 
 # Initialize AirLLM for memory-efficient inference
 air_llm = AirLLM(

@@ -4,7 +4,7 @@ from huggingface_hub import login
 import os
 
 
-login(token="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")
+login(token=os.getenv("ACCESS_TOKEN"))
 
 model_id = "meta-llama/Llama-3.2-1B-Instruct"
 

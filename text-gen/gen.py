@@ -6,7 +6,7 @@ import os
 from transformers import AutoTokenizer, AutoModelForCasualLM
 
 
-login(token="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")
+login(token=os.getenv("ACCESS_TOKEN"))
 
 model_path = "/Users/js232439/.cache/huggingface/models--meta-llama--Llama-3.1-8B-Instruct"
 
